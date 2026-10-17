@@ -39,10 +39,9 @@
     <path d="M-18 -28 L34 0 L-18 28 Z" fill="#ffffff" fill-opacity="0.95" stroke="none"/>
   </g>
 
-  <!-- 标题 -->
+  <!-- 标题不再烙进封面：卡片上有 HTML 标题，封面带字会和它重影（2026-10-17 修复） -->
   <g transform="translate(360,840)" text-anchor="middle">
-    <text y="0" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC','Source Han Sans SC',sans-serif" font-size="92" font-weight="900" fill="#ffffff" style="text-shadow:0 2px 18px rgba(0,0,0,.55)">士兵出击</text>
-    <rect x="-46" y="34" width="92" height="5" rx="2.5" fill="url(#sheen)"/>
+    <rect x="-46" y="0" width="92" height="5" rx="2.5" fill="url(#sheen)"/>
   </g>
 
   <rect width="720" height="1280" fill="url(#bottom)"/>

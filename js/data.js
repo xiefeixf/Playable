@@ -4,27 +4,27 @@
 //   path      仓库内游戏 HTML 文件名（相对仓库根，已统一放在 games/ 下）
 //   partner   厂商/系列标签（仅展示用）
 //   editDate  最后修改日期（用于排序，5月30日的3个在前）
-//   cover     封面 SVG（imgs/covers/<key>.svg，由 tools/gen_covers.mjs 生成）
-//   c1, c2    封面渐变主色（顶部色 + 底部色）
+//   cover     封面 PNG（imgs/screenshots/<key>.png，由 tools/screenshot_games.cjs 真实截图生成）
+//   c1, c2    封面渐变主色（仅作占位/兜底背景色，顶部色 + 底部色）
 const PAGES = [
-  { name: "切金条",           path: "games/SSD_QieJinTiao.html",            partner: "SSD",   editDate: "2026-05-30", cover: "imgs/covers/SSD_QieJinTiao.svg",                c1: "#fbbf24", c2: "#b45309" },
-  { name: "处理木材前贴版",     path: "games/SSD_ChuLiMuCaiQianTie.html",      partner: "SSD",   editDate: "2026-05-30", cover: "imgs/covers/SSD_ChuLiMuCaiQianTie.svg",          c1: "#b45309", c2: "#78350f" },
-  { name: "对应装卸",           path: "games/duiyingzhuangxie.html",          partner: "SSD",   editDate: "2026-05-30", cover: "imgs/covers/duiyingzhuangxie.svg",              c1: "#0ea5e9", c2: "#1e3a8a" },
-  { name: "处理木材",           path: "games/SSD_ChuLiMuCai.html",            partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/SSD_ChuLiMuCai.svg",                c1: "#a16207", c2: "#713f12" },
-  { name: "环状种地",           path: "games/SSD_HuanXingZhongDi.html",       partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/SSD_HuanXingZhongDi.svg",           c1: "#22c55e", c2: "#14532d" },
-  { name: "通电围困僵尸",       path: "games/SSD_TongDianWeiKunJiangshi.html", partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/SSD_TongDianWeiKunJiangshi.svg",    c1: "#8b5cf6", c2: "#3b82f6" },
-  { name: "画围墙",             path: "games/ssd-drawing-a-wall.html",        partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/ssd-drawing-a-wall.svg",            c1: "#06b6d4", c2: "#155e75" },
-  { name: "农场模拟",           path: "games/ssd-farm-simulation.html",       partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/ssd-farm-simulation.svg",           c1: "#16a34a", c2: "#064e3b" },
-  { name: "砍树打熊",           path: "games/ssd-log-and-bear.html",          partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/ssd-log-and-bear.svg",              c1: "#15803d", c2: "#3f2d1b" },
-  { name: "背包格塔防",         path: "games/ssd-bag-tower-defence.html",     partner: "SSD",   editDate: "2026-04-03", cover: "imgs/covers/ssd-bag-tower-defence.svg",         c1: "#7c3aed", c2: "#4c1d95" },
-  { name: "打怪卖枪",           path: "games/FunPlus_SellGun.html",           partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/covers/FunPlus_SellGun.svg",               c1: "#f97316", c2: "#b91c1c" },
-  { name: "营地武器塔防",       path: "games/funplus-tower-defense.html",     partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/covers/funplus-tower-defense.svg",         c1: "#ef4444", c2: "#b45309" },
-  { name: "建造出兵",           path: "games/funplus_BuildingAndWar.html",    partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/covers/funplus_BuildingAndWar.svg",        c1: "#f59e0b", c2: "#475569" },
-  { name: "爆金币啦",           path: "games/LS_BaoJinBiLa.html",             partner: "LS",    editDate: "2026-04-03", cover: "imgs/covers/LS_BaoJinBiLa.svg",                 c1: "#facc15", c2: "#a16207" },
-  { name: "士兵出击",           path: "games/LS_ShiBingTuJi.html",            partner: "LS",    editDate: "2026-04-03", cover: "imgs/covers/LS_ShiBingTuJi.svg",                c1: "#65a30d", c2: "#1d4ed8" },
-  { name: "猛鬼宿舍",           path: "games/TY_MengGuiSuShe.html",           partner: "TY",    editDate: "2026-04-03", cover: "imgs/covers/TY_MengGuiSuShe.svg",               c1: "#7c3aed", c2: "#1e1b4b" },
-  { name: "是男人就升100级",    path: "games/TH100G.html",                    partner: "TH",    editDate: "2026-04-03", cover: "imgs/covers/TH100G.svg",                        c1: "#ec4899", c2: "#7c3aed" },
-  { name: "三冰爬塔成长",       path: "games/climbingandgrowing.html",        partner: "三冰",   editDate: "2026-04-03", cover: "imgs/covers/climbingandgrowing.svg",            c1: "#38bdf8", c2: "#0e7490" }
+  { name: "切金条",           path: "games/SSD_QieJinTiao.html",            partner: "SSD",   editDate: "2026-05-30", cover: "imgs/screenshots/SSD_QieJinTiao.png",          c1: "#fbbf24", c2: "#b45309" },
+  { name: "处理木材前贴版",     path: "games/SSD_ChuLiMuCaiQianTie.html",      partner: "SSD",   editDate: "2026-05-30", cover: "imgs/screenshots/SSD_ChuLiMuCaiQianTie.png",    c1: "#b45309", c2: "#78350f" },
+  { name: "对应装卸",           path: "games/duiyingzhuangxie.html",          partner: "SSD",   editDate: "2026-05-30", cover: "imgs/screenshots/duiyingzhuangxie.png",          c1: "#0ea5e9", c2: "#1e3a8a" },
+  { name: "处理木材",           path: "games/SSD_ChuLiMuCai.html",            partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/SSD_ChuLiMuCai.png",            c1: "#a16207", c2: "#713f12" },
+  { name: "环状种地",           path: "games/SSD_HuanXingZhongDi.html",       partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/SSD_HuanXingZhongDi.png",       c1: "#22c55e", c2: "#14532d" },
+  { name: "通电围困僵尸",       path: "games/SSD_TongDianWeiKunJiangshi.html", partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/SSD_TongDianWeiKunJiangshi.png", c1: "#8b5cf6", c2: "#3b82f6" },
+  { name: "画围墙",             path: "games/ssd-drawing-a-wall.html",        partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/ssd-drawing-a-wall.png",        c1: "#06b6d4", c2: "#155e75" },
+  { name: "农场模拟",           path: "games/ssd-farm-simulation.html",       partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/ssd-farm-simulation.png",       c1: "#16a34a", c2: "#064e3b" },
+  { name: "砍树打熊",           path: "games/ssd-log-and-bear.html",          partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/ssd-log-and-bear.png",          c1: "#15803d", c2: "#3f2d1b" },
+  { name: "背包格塔防",         path: "games/ssd-bag-tower-defence.html",     partner: "SSD",   editDate: "2026-04-03", cover: "imgs/screenshots/ssd-bag-tower-defence.png",     c1: "#7c3aed", c2: "#4c1d95" },
+  { name: "打怪卖枪",           path: "games/FunPlus_SellGun.html",           partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/screenshots/FunPlus_SellGun.png",           c1: "#f97316", c2: "#b91c1c" },
+  { name: "营地武器塔防",       path: "games/funplus-tower-defense.html",     partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/screenshots/funplus-tower-defense.png",     c1: "#ef4444", c2: "#b45309" },
+  { name: "建造出兵",           path: "games/funplus_BuildingAndWar.html",    partner: "FunPlus", editDate: "2026-04-03", cover: "imgs/screenshots/funplus_BuildingAndWar.png",    c1: "#f59e0b", c2: "#475569" },
+  { name: "爆金币啦",           path: "games/LS_BaoJinBiLa.html",             partner: "LS",    editDate: "2026-04-03", cover: "imgs/screenshots/LS_BaoJinBiLa.png",             c1: "#facc15", c2: "#a16207" },
+  { name: "士兵出击",           path: "games/LS_ShiBingTuJi.html",            partner: "LS",    editDate: "2026-04-03", cover: "imgs/screenshots/LS_ShiBingTuJi.png",            c1: "#65a30d", c2: "#1d4ed8" },
+  { name: "猛鬼宿舍",           path: "games/TY_MengGuiSuShe.html",           partner: "TY",    editDate: "2026-04-03", cover: "imgs/screenshots/TY_MengGuiSuShe.png",           c1: "#7c3aed", c2: "#1e1b4b" },
+  { name: "是男人就升100级",    path: "games/TH100G.html",                    partner: "TH",    editDate: "2026-04-03", cover: "imgs/screenshots/TH100G.png",                    c1: "#ec4899", c2: "#7c3aed" },
+  { name: "三冰爬塔成长",       path: "games/climbingandgrowing.html",        partner: "三冰",   editDate: "2026-04-03", cover: "imgs/screenshots/climbingandgrowing.png",        c1: "#38bdf8", c2: "#0e7490" }
 ];
 
 // 浏览器端：挂到 window，供 main.js 使用
