@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="720" height="1280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#155e75"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vign" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e1a" stop-opacity="0"/>
+      <stop offset="0.62" stop-color="#0a0e1a" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0a0e1a" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1280" fill="url(#bg)"/>
+  <circle cx="505" cy="223" r="199" fill="#ffffff" opacity=".10"/><circle cx="714" cy="504" r="72" fill="#ffffff" opacity=".08"/>
+  <circle cx="272" cy="445" r="1.74" fill="#ffffff" opacity="0.15"/><circle cx="668" cy="392" r="2.76" fill="#ffffff" opacity="0.27"/><circle cx="508" cy="786" r="1.74" fill="#ffffff" opacity="0.25"/><circle cx="649" cy="294" r="1.19" fill="#ffffff" opacity="0.29"/><circle cx="135" cy="771" r="2.86" fill="#ffffff" opacity="0.46"/><circle cx="438" cy="948" r="2.71" fill="#ffffff" opacity="0.31"/><circle cx="202" cy="399" r="2.69" fill="#ffffff" opacity="0.32"/><circle cx="341" cy="1153" r="2.17" fill="#ffffff" opacity="0.38"/><circle cx="541" cy="776" r="2.61" fill="#ffffff" opacity="0.32"/><circle cx="621" cy="1020" r="1.51" fill="#ffffff" opacity="0.42"/><circle cx="68" cy="993" r="2.85" fill="#ffffff" opacity="0.44"/><circle cx="675" cy="945" r="1.49" fill="#ffffff" opacity="0.32"/><circle cx="632" cy="340" r="1.47" fill="#ffffff" opacity="0.52"/><circle cx="680" cy="1243" r="1.41" fill="#ffffff" opacity="0.45"/><circle cx="12" cy="1204" r="0.66" fill="#ffffff" opacity="0.33"/><circle cx="117" cy="466" r="2.67" fill="#ffffff" opacity="0.60"/><circle cx="552" cy="1261" r="2.44" fill="#ffffff" opacity="0.64"/><circle cx="593" cy="547" r="1.49" fill="#ffffff" opacity="0.33"/><circle cx="304" cy="342" r="2.83" fill="#ffffff" opacity="0.56"/><circle cx="156" cy="209" r="1.62" fill="#ffffff" opacity="0.17"/><circle cx="159" cy="317" r="1.44" fill="#ffffff" opacity="0.51"/><circle cx="582" cy="291" r="1.36" fill="#ffffff" opacity="0.53"/><circle cx="612" cy="102" r="1.88" fill="#ffffff" opacity="0.49"/><circle cx="352" cy="396" r="2.17" fill="#ffffff" opacity="0.58"/><circle cx="111" cy="877" r="2.81" fill="#ffffff" opacity="0.54"/><circle cx="111" cy="398" r="2.96" fill="#ffffff" opacity="0.63"/><circle cx="288" cy="1160" r="2.47" fill="#ffffff" opacity="0.36"/><circle cx="655" cy="654" r="0.79" fill="#ffffff" opacity="0.55"/><circle cx="564" cy="291" r="1.00" fill="#ffffff" opacity="0.40"/><circle cx="150" cy="763" r="2.01" fill="#ffffff" opacity="0.56"/><circle cx="654" cy="961" r="1.53" fill="#ffffff" opacity="0.30"/><circle cx="139" cy="1115" r="2.94" fill="#ffffff" opacity="0.22"/><circle cx="32" cy="532" r="0.91" fill="#ffffff" opacity="0.22"/><circle cx="162" cy="1210" r="0.86" fill="#ffffff" opacity="0.62"/><circle cx="509" cy="180" r="0.68" fill="#ffffff" opacity="0.19"/><circle cx="285" cy="658" r="1.02" fill="#ffffff" opacity="0.37"/><circle cx="650" cy="549" r="2.15" fill="#ffffff" opacity="0.27"/><circle cx="22" cy="671" r="2.56" fill="#ffffff" opacity="0.41"/><circle cx="28" cy="797" r="2.17" fill="#ffffff" opacity="0.54"/><circle cx="438" cy="440" r="1.78" fill="#ffffff" opacity="0.58"/><circle cx="494" cy="963" r="2.59" fill="#ffffff" opacity="0.62"/><circle cx="53" cy="439" r="2.18" fill="#ffffff" opacity="0.28"/><circle cx="710" cy="1198" r="1.31" fill="#ffffff" opacity="0.22"/><circle cx="282" cy="229" r="0.66" fill="#ffffff" opacity="0.47"/><circle cx="178" cy="156" r="1.48" fill="#ffffff" opacity="0.21"/><circle cx="350" cy="614" r="2.42" fill="#ffffff" opacity="0.36"/>
+  <rect width="720" height="1280" fill="url(#vign)"/>
+
+  <!-- 顶部厂商标签 -->
+  <g transform="translate(360,232)" text-anchor="middle">
+    <rect x="-92" y="-30" width="184" height="56" rx="28" fill="#ffffff" opacity="0.14"/>
+    <text x="0" y="8" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC','Source Han Sans SC',sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#ffffff" opacity="0.92">SSD</text>
+  </g>
+
+  <!-- 中央图标徽标（播放三角 + 圆环） -->
+  <g transform="translate(360,470)" fill="none" stroke="#ffffff">
+    <circle r="74" stroke-opacity="0.18" stroke-width="3"/>
+    <circle r="52" fill="#ffffff" fill-opacity="0.16" stroke="none"/>
+    <path d="M-18 -28 L34 0 L-18 28 Z" fill="#ffffff" fill-opacity="0.95" stroke="none"/>
+  </g>
+
+  <!-- 标题 -->
+  <g transform="translate(360,840)" text-anchor="middle">
+    <text y="0" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC','Source Han Sans SC',sans-serif" font-size="92" font-weight="900" fill="#ffffff" style="text-shadow:0 2px 18px rgba(0,0,0,.55)">画围墙</text>
+    <rect x="-46" y="34" width="92" height="5" rx="2.5" fill="url(#sheen)"/>
+  </g>
+
+  <rect width="720" height="1280" fill="url(#bottom)"/>
+</svg>

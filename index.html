@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Playable试玩案例</title>
+  <link rel="preconnect" href="https://fonts.loli.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.loli.net/css2?family=Orbitron:wght@700;900&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 流星 -->
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+
+  <header class="header">
+    <img src="imgs/icon.svg" alt="icon" class="header-logo">
+    <h1>Playable试玩案例</h1>
+  </header>
+
+  <main class="main-content">
+    <div class="section-title">全部试玩</div>
+    <div class="container">
+      <div class="page-list" id="pageList">
+        <div class="loading">加载中...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Playable 试玩案例 · 个人展示</p>
+  </footer>
+
+  <!-- 模态弹窗（二维码 + 打开项目） -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div class="modal-sub" id="modal-sub"></div>
+      <div id="qrcode-container">
+        <div id="qrcode"></div>
+      </div>
+      <button id="open-project-btn">打开项目</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/qrious.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
