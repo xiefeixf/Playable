@@ -10,7 +10,7 @@ const PORT = 8140;
 const BASE = `http://127.0.0.1:${PORT}/`;
 const CHROME = 'C:\\Users\\15980\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe';
 const OUT = path.join(__dirname, '..', 'imgs', 'screenshots');
-const WAIT_MS = 12000; // 引擎启动 + 资源加载的兜底等待
+const WAIT_MS = parseInt(process.env.WAIT_MS || '12000', 10); // 引擎启动 + 资源加载的兜底等待（可用环境变量覆盖）
 
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -35,10 +35,13 @@ fs.mkdirSync(OUT, { recursive: true });
   const page = await ctx.newPage();
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
+  // 仅截图指定 key（逗号分隔），留空则全部。key 取自 cover 文件名（去扩展名）
+  const ONLY = (process.env.ONLY || '').split(',').map((s) => s.trim()).filter(Boolean);
   let ok = 0;
   const fail = [];
   for (const p of PAGES) {
-    const key = p.cover.replace(/^.*\//, '').replace(/\.svg$/, '');
+    const key = p.cover.replace(/^.*[/\\]/, '').replace(/\.(svg|png)$/i, '');
+    if (ONLY.length && !ONLY.includes(key)) continue;
     const out = path.join(OUT, key + '.png');
     try {
       await page.goto(BASE + p.path, { waitUntil: 'load', timeout: 60000 });

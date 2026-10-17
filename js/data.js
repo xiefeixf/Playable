@@ -24,7 +24,11 @@ const PAGES = [
   { name: "士兵出击",           path: "games/LS_ShiBingTuJi.html",            partner: "LS",    editDate: "2026-04-03", cover: "imgs/screenshots/LS_ShiBingTuJi.png",            c1: "#65a30d", c2: "#1d4ed8" },
   { name: "猛鬼宿舍",           path: "games/TY_MengGuiSuShe.html",           partner: "TY",    editDate: "2026-04-03", cover: "imgs/screenshots/TY_MengGuiSuShe.png",           c1: "#7c3aed", c2: "#1e1b4b" },
   { name: "是男人就升100级",    path: "games/TH100G.html",                    partner: "TH",    editDate: "2026-04-03", cover: "imgs/screenshots/TH100G.png",                    c1: "#ec4899", c2: "#7c3aed" },
-  { name: "三冰爬塔成长",       path: "games/climbingandgrowing.html",        partner: "三冰",   editDate: "2026-04-03", cover: "imgs/screenshots/climbingandgrowing.png",        c1: "#38bdf8", c2: "#0e7490" }
+  { name: "三冰爬塔成长",       path: "games/climbingandgrowing.html",        partner: "三冰",   editDate: "2026-04-03", cover: "imgs/screenshots/climbingandgrowing.png",        c1: "#38bdf8", c2: "#0e7490" },
+  { name: "伐木加工",           path: "games/GOG_famujiagong.html",           partner: "GOG",   editDate: "2026-10-17", cover: "imgs/screenshots/GOG_famujiagong.png",           c1: "#16a34a", c2: "#3f2d1b" },
+  { name: "对应装卸人",         path: "games/SSd_duiyinzhuangxieren.html",     partner: "SSD",   editDate: "2026-10-17", cover: "imgs/screenshots/SSd_duiyinzhuangxieren.png",     c1: "#0ea5e9", c2: "#1e3a8a" },
+  { name: "火车拉石油",         path: "games/SSD_huochelashiyou.html",        partner: "SSD",   editDate: "2026-10-17", cover: "imgs/screenshots/SSD_huochelashiyou.png",        c1: "#f59e0b", c2: "#b45309" },
+  { name: "PA火车",             path: "games/SSD_pahuoche.html",              partner: "SSD",   editDate: "2026-10-17", cover: "imgs/screenshots/SSD_pahuoche.png",              c1: "#f97316", c2: "#7c3aed" }
 ];
 
 // 浏览器端：挂到 window，供 main.js 使用
